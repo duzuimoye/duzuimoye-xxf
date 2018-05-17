@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>semantic-ui form</title>
+    <link href="https://cdn.bootcss.com/semantic-ui/2.3.1/semantic.min.css" rel="stylesheet"/>
+   
+</head>
+<body>
+    <!-- 1.responsive web design 
+    2.整站框架 丰富的样式库级插件机制 满足开发
+    3.jQuery 是它的 css js  都有 vue react 结合也比较好
+    css 预编译系统致辞也很好
+    特色：类名系统，及其简单强大 -->
+    <div id="root"></div>
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525327929710&di=9aa2bd5e32164164df56390f0b71040a&imgtype=jpg&src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D2439355652%2C1852440864%26fm%3D214%26gp%3D0.jpg" alt="" /> 
+    <!-- <script src="http://www.semantic-ui.cn/examples/assets/library/jquery.min.js"></script> -->
+    <!-- <script src="https://cdn.bootcss.com/semantic-ui/2.3.1/semantic.min.js"></script> -->
+    <script>
+        // $ jQuery window 唯一的命名空间
+        // $()  $ =>function callback
+        // function() {} 参数
+        (function(g){
+            // 只有jQuery才能访问 外面访问不到
+            // 立即执行 函数作用域 好处
+            function ElementWrapper(selector){
+                this.ele = document.querySelector(selector)
+                if (!this.ele)
+                throw new Error('没有这个元素');
+
+            }
+            // jQuery 野心 对原生API的封装
+            // js原生API有很多兼容性的问题 选择jQuery的主要原因
+            ElementWrapper.prototype={
+                html:function(strHTML){
+                    this.ele.innerHTML = strHTML;
+                }
+
+            }
+            g.$ = function(param){
+                if (typeof param ==='function'){
+                    document.addEventListener(
+                    'DOMContentLoaded',param,false);
+                }else if(typeof param==='string'){
+                    // innerHTML
+                    // 返回结点
+                    // obj.html() 差距 
+                    // ele.innerHTML
+                    // dom 结点 => 类
+                    const obj = new ElementWrapper(param);
+                    return obj;
+                    // return document.querySelector(param);
+                    // $('#root')
+                    // .innerHTML='';
+                }
+                // window
+                // 整个DOM树的顶级对象
+                // 事件注册
+                // IE低版本不支持
+           
+            }
+        })(window)
+
+        $(function(){
+
+        })
+    $(function(){
+        // console.log('DOm ready')
+        // js 动态语言 随时加属性
+        $('#root').html='颖宝最漂亮了！';
+    })
+    </script>
+
+</body>
+</html>

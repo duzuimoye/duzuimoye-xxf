@@ -1,0 +1,30 @@
+
+.lansheng .content{
+    padding-top: 10%;
+  
+  }
+.lansheng .content.centered{
+    text-align: center;
+  }
+.lansheng .sub-header{
+    
+    flex: 1;
+    font-size: 32rpx;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    color: rgba(0,0,0,0.85);
+  }
+.lansheng .header{
+   
+    flex: 1;
+    font-size: 32rpx;
+    /* font-weight: bold; */
+    margin: 0 12% 8px;
+  
+  }
+.lansheng .description {
+    font-weight: bold;
+    margin-bottom: 52px;
+    padding:  0 12%;
+  }

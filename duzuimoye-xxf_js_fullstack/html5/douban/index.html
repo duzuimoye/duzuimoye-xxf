@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 禁止网页色缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,users-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: pink;
+        color: #111111;
+        font-size: 12px;
+        font-family: sans-serif;
+        position: relative;
+    }
+    .TalionNav{
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        background: #ffffff;
+        max-width: 650px;
+        box-sizing: border-box;
+        width: 100%;
+
+    }
+    .TalionNav-primary{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .TalionNav-primary nav li{
+        color: #42bd56;
+        font-style: 16px;
+        margin-right: 19px;
+        display: inline-block;
+    }
+   
+    </style>
+</head>
+<body ontouchstart>
+    <!-- web服务
+    本地服务 127.0.0.1：:8080
+    局域网分配IP 192.168.31.128:8080
+    测试环境IP：8080
+    线上环境 阿里云 -->
+    <div id="TalionNav">
+        <header class="TalionNav">
+
+            <div class="TalionNav-primary">
+                <a href="/"></a>
+                <h1>豆瓣</h1>
+                <nav>
+                    <ul>
+                        <li><a href="/">电影</a></li>
+                        <li><a href="/">图书</a></li>
+                        <li><a href="/">广播</a></li>
+                        <li><a href="/">小组</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>就地编辑</title>
+    <script src="edit_in_place.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        // js 封装 不同于java，php
+        // js 粘合剂， .style.管css的活
+        // creteElement appendChild 管HTML
+        // js 就是html,css 的城管
+        // 如何提供html，css操作的封装到一个类里面
+        // 为什么？以后可以一句js就用起来了，复用简单。
+    vareditor= new EditInPlace('name-edit-place',document.getElementById('root'),'未命名');
+    </script>
+</body>
+</html>

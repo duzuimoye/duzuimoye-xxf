@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>懒加载图片</title>
+  <script src="./lazyload.js"></script>
+  
+</head>
+<body>
+  <!-- 网页在渲染的时候， 
+  http请求数量 
+  chrome 性能最好， 同时并发的请求数十几个
+  将图片下载 放到dom ready 事件之后 将
+  有效提升网页打开速度 
+  占位图片， 
+  优化前 n张照片 url 不一样 http请求数是 n
+  优化后 图片上的http 数量只有 1
+  如果url 一样， 不会重复发送  -->
+  <img 
+  class="pic1"
+  src="http://static.youku.com/yk/vmanage/img/manage/video/mask.d53611efc6.png"
+  origin_src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3372151875,2265808198&fm=11&gp=0.jpg" alt="" />
+  <img 
+  src="http://static.youku.com/yk/vmanage/img/manage/video/mask.d53611efc6.png"
+  origin_src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=966380841,3906970359&fm=27&gp=0.jpg" alt="" />
+  <img 
+  src="http://static.youku.com/yk/vmanage/img/manage/video/mask.d53611efc6.png"
+  origin_src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=266968165,833940586&fm=27&gp=0.jpg" alt="" />
+  <script>
+
+  // 已经是用户看到了网页了， dom ready
+  // 优化图片下载， 将其推后，
+  window.onload = function() {
+    //   LazyLoadImage.setSrc()
+    // 在页面打开后， 重新下载图片
+    const img = document.querySelector('.pic1');
+    // origin_src 自定义属性 
+    const url = img.getAttribute('origin_src');
+    console.log(url);
+    img.src = url;
+    // img.setAttribute('src', url);
+  }
+  </script>
+</body>
+</html>

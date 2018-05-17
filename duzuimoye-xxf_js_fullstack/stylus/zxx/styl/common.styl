@@ -1,0 +1,32 @@
+bg_color =#123456
+box_size = 100px
+
+vendor(prop,args)
+    -webkit-{prop} args 
+    -moz-{prop} args 
+    -ms-{prop} args
+    {prop} args 
+
+border-radius(n)
+    vendor('border-radius',arguments)
+    // -webkit-border-raius n
+    // -ms-border-raius n
+    // -moz-border-raius n
+    // border-radius: n
+
+box-shadow(n)
+    vendor('box-shadow',arguments)
+    // -webkit-box-shadow n 
+    // -ms-box-shadow n 
+    // -moz-box-shadow n 
+    // box-shadow n
+
+
+.box
+    background-color bg_color
+    width: box_size
+    height box_size
+    border-radius(5px)
+    box-shadow( 1px 1px 10px rgba(0,0,0,.5))
+
+   

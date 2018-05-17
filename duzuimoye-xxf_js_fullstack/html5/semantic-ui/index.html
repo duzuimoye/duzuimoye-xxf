@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="http://www.semantic-ui.cn/examples/assets/library/jquery.min.js"></script> -->
+
+</head>
+<body>
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525327929710&di=9aa2bd5e32164164df56390f0b71040a&imgtype=jpg&src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D2439355652%2C1852440864%26fm%3D214%26gp%3D0.jpg" alt="" /> 
+    <script>
+    // image 结点 node
+    // node结点形成了DOM树 
+    // DOM api appendChild.style.background
+    // 原材料 html css
+    // 树成型了之后 触发DOM ready事件 
+    // 1.解析HTML，构建DOM树
+    // 2.构建渲染树 (解析css)
+    // 3.布局渲染树
+    // 4.绘制渲染树
+    // 网页内容下载完成 资源
+    // http 请求的都是资源
+    // img src
+    // window.onload
+    // js 下载有阻塞
+    // 放到底部，如果需要并不复杂 为了加速 选择放弃框架
+    window.onload = function(){
+        console.log('页面加载完成');
+    } 
+    // 早一点 DOM ready事件
+    $(function(){
+        console.log('DOM ready');
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/stories/stories",
+    "pages/vehicies/show"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "宁浩汽车",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleTextSize": "24px"
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "borderStytle": "white",
+    "backgroundColor": "#ededed",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png"
+      },
+      {
+        "text": "故事",
+        "pagePath": "pages/stories/stories",
+        "iconPath": "assets/icons/event.png",
+        "selectedIconPath": "assets/icons/event-active.png"
+      }
+    ]
+  }
+}

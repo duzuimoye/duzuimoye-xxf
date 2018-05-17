@@ -1,0 +1,12 @@
+@import 'styles/reset.wxss';
+@import 'styles/hero.wxss';
+@import 'styles/button.wxss';
+@import 'styles/card.wxss';
+@import 'styles/cover.wxss';
+@import 'styles/spec.wxss';
+@import 'styles/action.wxss';
+@import 'styles/stories.wxss';
+@import 'styles/show.wxss';
+.section{
+  height: 100vh;
+}

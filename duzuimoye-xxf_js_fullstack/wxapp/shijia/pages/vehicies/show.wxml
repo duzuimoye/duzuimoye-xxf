@@ -1,0 +1,11 @@
+<!--pages/vehicies/show.wxml-->
+<swiper class="section  lansheng">
+    <swiper-item>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526274829113&di=aef4a1de50d45b04569edee1e9049ca2&imgtype=0&src=http%3A%2F%2Fimg.ycwb.com%2Fauto%2Fattachement%2Fjpg%2Fsite2%2F20170412%2F448a5bb0f5b61a57bcac03.jpg" mode="aspectFill"/>
+            <view class="content centered">
+              <view class="sub-header">二氧化碳排放量</view>
+              <view class="header">综合燃油</view>
+              <view class="description">路虎精湛 看我强大的SUV</view>
+            </view>
+</swiper-item>
+</swiper>

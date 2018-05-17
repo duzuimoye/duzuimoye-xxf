@@ -1,0 +1,138 @@
+/* css rest */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: #fbfbfb;
+    font-family: Helvetica,Arial,Roboto,PingFang SC,Microsoft Yahei,Hiragino Sans GB,sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+#db-global-nav {
+    height: 28px;
+    color: #d5d5d5;
+    background-color: #545652;
+    min-width: 950px;
+    font: 12px Helvetica,Arial,sana-serif;
+    line-height: 1.62;
+    font-size: 12px;
+}
+#db-global-nav .global-nav-item {
+    font-size: 0;
+}
+#db-global-nav ul{
+    margin: 0;
+    padding: 0;
+}
+/* inline-block有缺陷， */
+/* 解决了行内块级的问题，但是在元素间会
+莫名产生一点像素间距，影响算像素
+两种解决方法 删除元素间的换行
+父元素font-size 0
+子元素 重新设置 font-size */
+#db-global-nav .global-nav-item li {
+    display: inline-block;
+    zoom: 1;
+    line-height: 28px;
+    font-size: 12px;
+    vertical-align: baseline;
+}
+li {
+    display: list-item;
+}
+#db-global-nav a {
+    cursor: pointer;
+    text-decoration: none;
+}
+#db-global-nav .global-nav-item a {
+    display: inline-block;
+    zoom: 1;
+   padding: 0 12px;
+   height: 28px;
+}
+#db-global-nav #db-global-nav a:link, #db-global-nav a:visited, #db-global-nav a:hover, #db-global-nav 
+a:active {
+    color: #d5d5d5;
+}
+a, a:active, z:hover, a:link, a:visited {
+    color: #5c5c5c;
+    cursor: pointer;
+    text-decoration: none;
+}
+#db-global-nav .top-nav-doubanapp {
+    position: relative;
+    float: right;
+    margin-right: 5px;
+    line-height: 28px;
+}
+#db-global-nav .top-nav-info a {
+    display: inline-block;
+    zoom: 1;
+    margin: 0;
+    padding: 0 12px;
+    height: 28px;
+}
+
+ #db-global-nav .top-nav-info {
+    float: right;
+    margin: 0 12px 0 0;
+    line-height: 28px;
+} 
+
+ #db-global-nav .top-nav-info a {
+    display: inline-block;
+    zoom: 1;
+    margin: 0;
+    padding: 0 12px;
+    height: 28px;
+}
+
+#db-global-nav {
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+    font-size: 12px;
+} 
+
+#market-header {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 1px 4px #e4e4e4;
+    height: 52px;
+}
+
+#market-header .header-inner {
+    zoom: 1;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+div {
+    display: block;
+}
+
+#market-header .market-user {
+    margin-left: 20px;
+    float: right;
+}
+
+#market-header .market-user .user-people {
+    display: inline-block;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+
+#market-header .market-user .user-people .user-pic {
+    color: #9b9b9b;
+    font-size: 12px;
+}
