@@ -23,21 +23,23 @@
                     1/{{images.length}}
                 </view>
             </view>
-            <div class="uploader__bd">
+            <view class="uploader__bd">
                 <view class="uploader__files">
                     <block wx:for="{{images}}" wx:key="{{item.id}}">
-                        <view class="uploader__file">
-                            <image mode="aspectFill" class="uploader__img" src="{{item.path}}"></image>
+                        <view class="uploader__file" bindlongtap="longTap">
+                            <image mode="aspectFill" class="uploader__img" data-index="{{index}}" src ="{{item.path}}">
+                            </image>
                         </view>
                     </block>
                 </view>
                 <view class="uploader__input-box">
-                    <view bindtap="onChooseImage" class="uploader__input"></view>
+                    <view class="uploader__input" bindtap="onChooseImage"></view>
                 </view>
-            </div>
+            </view>
         </view>
     </view>
 </view>
+
 <view class="cells__title">发布</view>
 <view class="cells cells_after-title">
     <view class="cell cell_switch">
