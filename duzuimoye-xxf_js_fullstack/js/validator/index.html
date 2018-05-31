@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单验证</title>
+</head>
+<body>
+  <form action="http://xxx.com/register" id="registerForm"
+   method="post"> 
+    <div class="field">
+      请输入用户名：<input type="text" name="userName"/>
+    </div>
+    <div class="field">
+      请输入密码：<input type="password" name="password"/>
+    </div>
+    <div class="field">
+      请输入手机号码：<input type="tel" name="phoneNumber"/>
+    </div>
+    <button>提交</button>
+  </form>
+  <script src="validator.js"></script>
+  <script>
+  const registerForm = document.getElementById('registerForm');
+  registerForm.onsubmit = function() {
+//     const userNameResult = strategies.isNonEmpty(registerForm.userName.value, '用户名不能为空');
+
+//     if (!userNameResult.status) {
+//       alert(userNameResult.msg);
+//       return false;
+//     }
+//     // 密码长度不少于6位
+
+//     const passwordResult = strategies.minLength(registerForm.password.value, 6, '密码长度不能少于6位');
+//     if (!passwordResult.status) {
+//       alert(passwordResult.msg);
+//       return false;
+//     }
+
+//     const phoneNumerbResult = strategies.isNonEmpty(registerForm.phoneNumber.value, '手机号不能为空');
+    
+//     if (!phoneNumerbResult.status) {
+//       alert(phoneNumerbResult.msg);
+//       return false;
+//     }
+
+//     const regPhoneResult = strategies.isMobilePhone(registerForm.phoneNumber.value, '手机格式有误');
+
+//     if (!regPhoneResult.status) {
+//       alert(regPhoneResult.msg);
+//       return false;
+//     }
+    var errorMsg = validatorFunc();
+    if(errorMsg){
+        alert(errorMsg);
+        return false;
+    }
+    return true;
+  } 
+//   具体的表单验证 -> strategies 集合了验证逻辑 （抽象的去写验证）
+//   抽象 valiateFunc 具体的代码
+// 用户名不能为空
+// ...
+//   什么元素 什么规则(抽象strategies) 做什么验证(key)
+function validatorFunc(){
+    // 验证对象
+    // 验证函数任务中 已经有了验证策略类
+    // 有很多不确定的数量表单元素及规则 雅趣验证
+    // 中介者模式 门清 内存 品牌 颜色 交个中介者对象 轻松很多
+    // 要一个验证对象 专业的 将要验证的元素交给它
+    // 验证的过程 抽象
+    // 元素给对象
+    var validator = new Validator();
+    validator.add(registerForm.userName,'isNonEmpty','用户不能为空');
+    validator.add(registerForm.password,'Length:6:16','密码长度不能少于6位或大于16位');
+    validator.add(registerForm.phoneNumber,'isMobilePhone','手机格式有误');
+    var errorMsg = validator.start();
+    return errorMsg;
+
+}
+// function validateFunc(){
+//     const userNameResult = strategies.isNonEmpty(registerForm.userName.value, '用户名不能为空');
+//     if(userNameResult){
+//         return userNameResult;
+//     }
+//     const passwordResult = strategies.Length(registerForm.password.value, 6,16, '密码长度不能少于6位或大于16位');
+//     if(passwordResult){
+//         return passwordResult;
+//     }
+//     const phoneResult = strategies.isMobilePhone(registerForm.phoneNumber.value, '手机格式有误');
+//     if(phoneResult){
+//         return phoneResult;
+//     }
+// }
+// 将要验证的表单元素加进一个数组
+//开启一一验证 strategies
+    function  Validator(){
+        this.cache = [];
+    }
+    Validator.prototype={
+        //rule 规则6？
+        add:function(dom,rule,errorMsg){
+            var ary =rule.split(':');
+            this.cache.push(function(){
+                var strategy = ary.shift();
+                ary.unshift(dom.value);
+                ary.push(errorMsg);
+                // [value,params,errorMsg] strategy 参考顺序
+                return strategies[strategy].apply(dom,ary)
+            })
+        },
+        start:function(){
+            for(var i=0,validatorFunc; validatorFunc=this.cache[i++];){
+                var msg =validatorFunc();
+                if(msg){
+                    return msg;
+                }
+            }
+        }
+    }
+  </script>
+</body>
+</html>
