@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+            选择颜色：
+            <select name="颜色" id="colorSelect">
+                    <option value ="red">红色</option>
+                    <option value ="blue">蓝色</option>
+                  </select>
+            请输入购买数量：<input  id="NumInput"type="text"  size="20" maxlength="3"/></br>
+            您选择的颜色：<span id="color"></span> </br>
+            您输入的数量：<span id="num"></span> </br>
+
+            
+    </div>
+    <script>
+        const oSelect = document.querySelector('#colorSelect');
+        const oNumInput = document.querySelector('#numInput');
+        const oColorSpan = document.querySelector('#color');
+
+        oSelect.addEventListener('change', function(event) {
+            showChooseResult();
+        }, false);
+        oNumInput.addEventListener('input', function(event) {
+            showChooseResult();
+        })
+
+        function showChooseResult() {
+            const strColor = oSelect.value;
+            oColorSpan.innerHTML = strColor;
+        }
+
+      
+    </script>
+  <!-- 红色4库存
+  蓝色6库存   -->
+  <!-- var iphone{
+      red:4;
+      blue:6;
+  }
+  select onchange 事件 数量不写。
+  提交按钮会禁用 disabled 先禁用 在启用
+  红色 当数量为5 oninput 事件 onchange 按钮数据不足
+  disabled 
+  蓝色 当数量为5，加入购物车 -->
+</body>
+</html>
