@@ -1,24 +1,34 @@
-// pages/recommend/recommend.js
+// pages/address/address.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    slides:[
-      {
-        id:1,
-        image:"../../images/jiaju4.jpeg"
-      },
-      {
-        id:2,
-        image:"../../images/jiaju5.jpeg"
-      },
-      {
-      id:3,
-      image:"../../images/jiaju6.jpeg"
+  
+  },
+  // name:function(){
+  //   if(name.value ===''){
+  //     alert('请输入姓名')
+  //   }
+  // },
+  confirm:function(){
+    wx.showModal({
+      title: '提示',
+      content: '是否确定保存信息',
+      success: function(res) {
+        if (res.confirm) {
+          wx.navigateBack({
+            delta: 2
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
       }
-    ]
+    })
+    // wx.navigateBack({
+    //   delta: 2
+    // })
   },
 
   /**

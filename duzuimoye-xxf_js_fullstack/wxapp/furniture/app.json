@@ -4,13 +4,18 @@
     "pages/recommend/recommend",
     "pages/shoppingcar/shoppingcar",
     "pages/my/my",
-    "pages/logs/logs"
-
+    "pages/logs/logs",
+    "pages/userinfo/userinfo",
+    "pages/address/address",
+    "pages/bed/bed",
+    "pages/sofa/sofa",
+    "pages/desk/desk",
+    "pages/table/table"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f5b223",
-    "navigationBarTitleText": "家具时尚",
+    "navigationBarTitleText": "双龙家具时尚",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

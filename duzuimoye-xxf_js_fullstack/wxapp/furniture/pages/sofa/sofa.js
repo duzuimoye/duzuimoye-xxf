@@ -1,24 +1,11 @@
-// pages/recommend/recommend.js
+// pages/sofa/sofa.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    slides:[
-      {
-        id:1,
-        image:"../../images/jiaju4.jpeg"
-      },
-      {
-        id:2,
-        image:"../../images/jiaju5.jpeg"
-      },
-      {
-      id:3,
-      image:"../../images/jiaju6.jpeg"
-      }
-    ]
+  
   },
 
   /**

@@ -1,2 +1,36 @@
 <!--pages/recommend/recommend.wxml-->
-<text>pages/recommend/recommend.wxml</text>
+<view class="container">
+    <view class="header">
+            <image src="../../images/bimai.png"></image>
+            <text>店家推荐</text>
+    </view>
+    <view class="box">
+        <swiper class="section" indicator-dots="{{true}}">
+            <view class="img-box">
+                <block wx:for="{{slides}}"wx:key="id">
+                    <swiper-item>
+                        <image src="{{item.image}}" mode="aspectFill"/>
+                    </swiper-item>
+                </block>
+            </view>
+        </swiper> 
+    </view>
+    <view class="header2">
+        <image src="../../images/bimai.png"></image>
+        <text>床</text>
+    <view class="img-box2">
+        <view class="img-list1">
+            <image src="../../images/chuang1.jpg" mode="aspectFill"></image>
+            <text class="textarea">欧式时尚风格床SL3051</text>
+            <text class="textarea2">￥800RMB</text>
+            <button>购买</button>
+        </view>
+        <view class="img-list2">
+                <image src="../../images/chuang2.jpg" mode="aspectFill"></image>
+                <text class="textarea">欧式时尚风格床SL2006</text>
+                <text class="textarea2">￥900RMB</text>
+                <button>购买</button>
+            </view>
+    </view>
+    </view>
+</view>

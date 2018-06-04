@@ -20,6 +20,26 @@ Page({
     ]
    
   },
+  chuang:function(){
+    wx.navigateTo({
+      url:'../bed/bed'
+    })
+  },
+  shafa:function(){
+    wx.navigateTo({
+      url:'../sofa/sofa'
+    })
+  },
+  bangongzhuo:function(){
+    wx.navigateTo({
+      url:'../desk/desk'
+    })
+  },
+  canzhuo:function(){
+    wx.navigateTo({
+      url:'../table/table'
+    })
+  },
   onLoad(){
     // this.setData({
     //   slides: app.globalData.slides

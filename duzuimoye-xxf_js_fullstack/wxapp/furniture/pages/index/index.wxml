@@ -8,4 +8,27 @@
         </block>
       </view>
     </swiper>
+    <view class="img-section">
+      <view  bindtap="chuang"class="section1">
+        <image src="../../images/chuang.png"></image>
+        <text>床</text>
+      </view>
+      <view bindtap="shafa" class="section2">
+        <image src="../../images/shafa.png"></image>
+        <text>沙发</text>
+      </view>
+      <view  bindtap="bangongzhuo"class="section3">
+        <image src="../../images/bangongzhuo.png"></image>
+        <text>办公桌</text>
+      </view>
+      <view bindtap="canzhuo"class="section4">
+        <image src="../../images/canzhuo.png"></image>
+        <text>餐桌</text>
+      </view>
+    </view>
+    <view class="introduce">
+      <view class="textarea">
+        <text>双龙家具有限公司是一家坐落在江西赣州南康区的沙发公司。始创于2008年，是集研发、生产、营销服务为一体的大型综合性家具企业，通过精益求精的经营理念与全心全意为消费者服务的服务宗旨。成为中国家具行业的领军品牌.具有强大的品牌优势和良好的品质口碑。本公司生产红木家具 真皮沙发 餐桌和床，欢迎大家订购。</text>
+      </view>
+    </view>
 </view>
