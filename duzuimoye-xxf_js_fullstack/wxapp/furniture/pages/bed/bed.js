@@ -5,7 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    tuijian:[
+      {
+        id:1,
+        image:'../../images/chuang3.jpg',
+        info:'欧式时尚风格床SL3051',
+        price:'￥880RMB'
+      },
+      {
+        id:2,
+        image:'../../images/chuang4.jpg',
+        info:'欧式时尚风格床SL3058',
+        price:'￥980RMB'
+      },
+      {
+        id:3,
+        image:'../../images/chuang5.jpg',
+        info:'欧式时尚风格床SL3059',
+        price:'￥960RMB'
+      },
+    ]
   },
 
   /**

@@ -8,7 +8,7 @@
         <swiper class="section" indicator-dots="{{true}}">
             <view class="img-box">
                 <block wx:for="{{slides}}"wx:key="id">
-                    <swiper-item>
+                    <swiper-item bindtap="detail">
                         <image src="{{item.image}}" mode="aspectFill"/>
                     </swiper-item>
                 </block>
@@ -19,18 +19,20 @@
         <image src="../../images/bimai.png"></image>
         <text>床</text>
     <view class="img-box2">
-        <view class="img-list1">
-            <image src="../../images/chuang1.jpg" mode="aspectFill"></image>
-            <text class="textarea">欧式时尚风格床SL3051</text>
-            <text class="textarea2">￥800RMB</text>
-            <button>购买</button>
-        </view>
-        <view class="img-list2">
-                <image src="../../images/chuang2.jpg" mode="aspectFill"></image>
+        
+            <view class="img-list1">
+                <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=658720458,3850732508&fm=27&gp=0.jpg" mode="aspectFill"></image>
+                <text class="textarea">欧式时尚风格床SL3051</text>
+                <text class="textarea2">￥800RMB</text>
+                <button>购买</button>
+            </view>
+            <view class="img-list2">
+                <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1637434956,4152244244&fm=200&gp=0.jpg" mode="aspectFill"></image>
                 <text class="textarea">欧式时尚风格床SL2006</text>
                 <text class="textarea2">￥900RMB</text>
                 <button>购买</button>
             </view>
     </view>
     </view>
+
 </view>

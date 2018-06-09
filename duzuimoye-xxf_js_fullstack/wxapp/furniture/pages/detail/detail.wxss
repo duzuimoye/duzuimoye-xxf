@@ -1,0 +1,98 @@
+/* pages/detail/detail.wxss */
+
+scroll-view{
+    margin-bottom: 100px;
+}
+swiper{
+    height: 500rpx;
+}
+swiper-item image{
+  width:100%;
+  height: 500rpx;
+}
+.price{
+    font-size: 40rpx;
+    color: #F98809;
+    margin: 20rpx 20rpx 0rpx 20rpx;
+    padding: 0 0 20rpx 0;
+    border-bottom: 1rpx solid silver;
+}
+.info{
+    font-size: 28rpx;
+    font-weight: bolder;
+    color: black;
+    padding-left: 1.2rem;
+}
+
+.footer{
+    background-color: #fff;
+    border-top:1px solid #eee;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20rpx 0 0 0;
+}
+.say{
+    background: #fff;
+    margin-bottom: 10rpx;
+    border-bottom: 1rpx solid rgb(177, 177, 177);
+}
+.say .top{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: 100rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    border-bottom: 0.5rpx solid rgb(184, 183, 183);
+}
+.say .top .left{
+    padding-top: 20rpx;
+    float: left;
+}
+.say .top .right{
+    padding-top: 20rpx;
+    float: right;
+    font-size: 30rpx;
+    color: rgb(158, 154, 154)
+}
+.say .personImg{
+    display: inline-block;
+    margin: 30rpx;
+    height: 100rpx;
+    width: 100rpx;
+    border-radius: 50%;
+}
+.say .Nickname{
+    font-size: 28rpx;
+}
+.content{
+    font-size: 25rpx; 
+}
+.say .Nickname{
+    position: relative;
+    top: -70rpx;
+}
+.say .content{
+    width: 500rpx;
+    position: relative;
+    top: -70rpx;
+    right: -160rpx;
+}
+.footer_btn{
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.footer_btn text{
+    width: 50%;
+    text-align: center;
+    float: left;
+    background: #f55d02;
+    color: #fff;
+}
+.footer_btn text:last-child{
+    background: #f5b223;
+}

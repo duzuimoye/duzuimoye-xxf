@@ -12,19 +12,18 @@
   width: 100%;
   height: 100%;
 }
-/* .img-box image:after{
+.img-box image:after{
   content: "";
   position: absolute;
   bottom: 0;
   width: 100%;
   color: #fff;
   padding: 50px 20px;
-} */
+}
 .img-section{
   width: 100%;
   height: 100%;
   display: flex;
-  /* flex-direction: column; */
   text-align: center;
 }
 .img-section image{
@@ -37,8 +36,7 @@
 .img-section text{
   font-size: 14px;
   font-weight: normal;
-  /* text-align: center; */
-  /* margin-left: 25px; */
+  color:#99ccff;
 
 }
 .introduce{
@@ -53,6 +51,4 @@ margin: 20px auto;
   font-size: 10pt;
   line-height: 10px;
   color:#4682B4;
-  /* margin: 10px;
-  padding: 10px; */
 }

@@ -48,10 +48,28 @@ background: #eee;
         </repeat>
       </swiper>
     </view>
+    <view class="line"></view>
+    <view class="cards-area">
+      <repeat for="{{detail.objects}}">
+        <!-- 绑定事件 -->
+        <view wx:if="{{item.id}}" @tap="tap({{item.id}})"> 
+          <card :title="item.title_en" 
+          :content="item.summary"
+          :grade="item.grade_info"
+          :words="item.length"
+          :reviews="item.num_reviews"
+          :thumbnail="item.thumbnail_urls[0]">
+
+          </card>
+        </view>
+
+      </repeat>
+    </view>
   </view>
 </template>
 
 <script>
+  import Card from '../components/card'
   import wepy from 'wepy'
   import Panel from '@/components/panel' // alias example
   import Counter from 'counter' // alias example
@@ -71,6 +89,7 @@ background: #eee;
       navigationBarTitleText: 'News Lite'
     }
     components = {
+      card:Card,
       panel: Panel,
       counter1: Counter,
       counter2: Counter,
@@ -101,6 +120,11 @@ background: #eee;
     }
 
     methods = {
+      tap(id){
+        wx.navigateTo({
+          url:`/pages/article?id=${id}`
+        })
+      },
       plus () {
         this.mynum++
       },
@@ -114,9 +138,7 @@ background: #eee;
           console.log('toast done')
         })
       },
-      tap () {
-        console.log('do noting from ' + this.$name)
-      },
+ 
       communicate () {
         console.log(this.$name + ' tap')
 

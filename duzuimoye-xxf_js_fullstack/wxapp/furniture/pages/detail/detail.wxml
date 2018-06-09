@@ -1,0 +1,31 @@
+<!--pages/detail/detail.wxml-->
+<view>
+    <scroll-view > 
+        <swiper class="swiper" indicator-dots="{{true}}" autoplay="autoplay" setInterval="3000" duration="500">
+            <block wx:for="{{detail}}" wx:key="index">
+                <swiper-item>
+                    <image src="{{item.image}}" />
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="price">￥2800RMB</view>
+        <view class="info">简约现代布艺沙发 大小户型客厅家具整装转角组合 可拆选U型沙发</view>
+        
+    </scroll-view>
+    <view class="footer">
+            <view class="say">
+                    <view class="top">
+                        <text class="left">宝贝评价(588)</text>
+                        <text class="right">查看全部评价</text>  
+                    </view>     
+                    <view>
+                        <image class="personImg" src="{{person.personImg}}"/>
+                        <text class="Nickname">{{person.nickname}}</text>
+                        <view class="content">{{person.content}}</view>
+                    </view>
+            </view>
+      <view class="footer_btn">
+        <text id="add" bindtap="buyCount">加入购物车</text><text bindtap="buyNow">立即购买</text>
+      </view>
+    </view>
+</view>

@@ -1,2 +1,58 @@
 <!--pages/sofa/sofa.wxml-->
-<text>pages/sofa/sofa.wxml</text>
+
+<view class="img-box2">
+        
+        <view class="img-list1">
+            <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1351090311,716221631&fm=200&gp=0.jpg" mode="aspectFill"></image>
+            <text class="textarea">欧式时尚风格床SL3051</text>
+            <text class="textarea2">￥2800RMB</text>
+        </view>
+        <view class="img-list2">
+                <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528392332240&di=2d77a947de93d8057940cf0eb18374d4&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dpixel_huitu%252C0%252C0%252C294%252C40%2Fsign%3Db44be6dade39b60059c307f780285046%2F7dd98d1001e9390180ba680770ec54e736d1964b.jpg" mode="aspectFill"></image>
+                <text class="textarea">欧式时尚风格床SL2006</text>
+                <text class="textarea2">￥2900RMB</text>
+                
+        </view>
+</view>
+<view class="img-box3">
+        
+        <view class="img-list1">
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528392332237&di=1ed381a7432ddc254cc7d005d72a072a&imgtype=0&src=http%3A%2F%2Fpic34.photophoto.cn%2F20150122%2F0020032986643717_b.jpg" mode="aspectFill"></image>
+            <text class="textarea">欧式时尚风格床SL3051</text>
+            <text class="textarea2">￥2800RMB</text>
+        </view>
+        <view class="img-list2">
+                <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528392332235&di=bdcfa9fe8f02aa7e70b5645cf0088c40&imgtype=0&src=http%3A%2F%2Fwww.ylssofa.com%2Fuploadfiles%2Fpictures%2Fproduct%2F20170606161957_6649.png" mode="aspectFill"></image>
+                <text class="textarea">欧式时尚风格床SL2006</text>
+                <text class="textarea2">￥2900RMB</text>
+                
+        </view>
+</view>
+<view class="img-box3">
+        
+        <view class="img-list1">
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528392332235&di=bdcfa9fe8f02aa7e70b5645cf0088c40&imgtype=0&src=http%3A%2F%2Fwww.ylssofa.com%2Fuploadfiles%2Fpictures%2Fproduct%2F20170606161957_6649.png" mode="aspectFill"></image>
+            <text class="textarea">欧式时尚风格床SL3051</text>
+            <text class="textarea2">￥5800RMB</text>
+        </view>
+        <view class="img-list2">
+                <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528392332235&di=b39bfea48d8d83ef35be0bafefe00e20&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161115%2F2efe2f035a4c4a419a5ad4e6663506af_th.jpg" mode="aspectFill"></image>
+                <text class="textarea">欧式时尚风格床SL2006</text>
+                <text class="textarea2">￥3900RMB</text>
+                
+        </view>
+</view>
+<view class="img-box3">
+        
+        <view class="img-list1">
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528392332237&di=1ed381a7432ddc254cc7d005d72a072a&imgtype=0&src=http%3A%2F%2Fpic34.photophoto.cn%2F20150122%2F0020032986643717_b.jpg" mode="aspectFill"></image>
+            <text class="textarea">欧式时尚风格床SL3051</text>
+            <text class="textarea2">￥4800RMB</text>
+        </view>
+        <view class="img-list2">
+                <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528392332237&di=1ed381a7432ddc254cc7d005d72a072a&imgtype=0&src=http%3A%2F%2Fpic34.photophoto.cn%2F20150122%2F0020032986643717_b.jpg" mode="aspectFill"></image>
+                <text class="textarea">欧式时尚风格床SL2006</text>
+                <text class="textarea2">￥1900RMB</text>
+                
+        </view>
+</view>

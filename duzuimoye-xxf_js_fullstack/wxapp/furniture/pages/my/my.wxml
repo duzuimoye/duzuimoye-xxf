@@ -9,7 +9,7 @@
         </view>
 </view>
 <view class="list">
-    <view class="item" bindtap="order">
+    <view class="item">
         <image src="../../images/dingdan.png" />我的订单
         <text class="jump">＞</text>
     </view>

@@ -10,7 +10,8 @@
     "pages/bed/bed",
     "pages/sofa/sofa",
     "pages/desk/desk",
-    "pages/table/table"
+    "pages/table/table",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
