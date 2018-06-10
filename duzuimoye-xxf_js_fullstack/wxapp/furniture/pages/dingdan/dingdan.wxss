@@ -1,0 +1,41 @@
+/* pages/dingdan/dingdan.wxss */
+.container{
+    background: whitesmoke;
+    border: 3px solid #999;
+}
+.item{
+    width: 100%;
+}
+.item text{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.info{
+    height:100%;
+    width: 100%;
+    padding-left: 10px;
+}
+.info image{
+    width: 200rpx;
+    height: 200rpx;
+}
+.info text{
+    font-size: 16px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+.price{
+    position: relative;
+    left: 240px;
+    color:red;
+}
+#add{
+    width: 30%;
+    text-align: center;
+    float: right;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #f55d02;
+    color: #fff;
+}

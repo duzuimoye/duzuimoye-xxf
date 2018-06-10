@@ -12,12 +12,18 @@ Page({
       url:'../address/address'
     })
   },
+  order:function(){
+    wx.navigateTo({
+      url:'../dingdan/dingdan'
+    })
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../userinfo/userinfo'
     })
   },
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

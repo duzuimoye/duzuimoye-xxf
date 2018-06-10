@@ -21,7 +21,7 @@ swiper-item image{
     font-size: 28rpx;
     font-weight: bolder;
     color: black;
-    padding-left: 1.2rem;
+     margin: 20rpx 20rpx 0rpx 20rpx;
 }
 
 .footer{

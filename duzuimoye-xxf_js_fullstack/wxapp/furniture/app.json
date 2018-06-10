@@ -11,7 +11,9 @@
     "pages/sofa/sofa",
     "pages/desk/desk",
     "pages/table/table",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/buy/buy",
+    "pages/dingdan/dingdan"
   ],
   "window": {
     "backgroundTextStyle": "light",

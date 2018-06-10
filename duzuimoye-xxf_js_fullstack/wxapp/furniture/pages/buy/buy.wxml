@@ -1,0 +1,12 @@
+<!--pages/buy/buy.wxml-->
+<view class="paySuccessContent">
+    <view class="header">
+        <view class="paySucessIcon">
+            <image src="/images/buy.png" />
+        </view>
+        <view class="paySuccessText">支付成功</view>
+    </view>
+    <view class="successPriceText">双龙时尚家居</view>
+    <view class="successPrice">￥2800</view>
+    <view class="successBtn" bindtap="finish">完成</view>
+</view>

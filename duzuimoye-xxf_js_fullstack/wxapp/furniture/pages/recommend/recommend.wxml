@@ -22,17 +22,38 @@
         
             <view class="img-list1">
                 <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=658720458,3850732508&fm=27&gp=0.jpg" mode="aspectFill"></image>
-                <text class="textarea">欧式时尚风格床SL3051</text>
-                <text class="textarea2">￥800RMB</text>
-                <button>购买</button>
+                <view class="textarea">欧式风格床SL3051</view>
+                <view class="price">￥1600</view>
+                <view class="num">月售12件</view>
             </view>
             <view class="img-list2">
                 <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1637434956,4152244244&fm=200&gp=0.jpg" mode="aspectFill"></image>
-                <text class="textarea">欧式时尚风格床SL2006</text>
-                <text class="textarea2">￥900RMB</text>
-                <button>购买</button>
+                <view class="textarea">欧式风格床SL2006</view>
+                <view class="price">￥800</view>
+                <view class="num">月售9件</view>
             </view>
+            
     </view>
     </view>
+    <view class="header3">
+            <image src="../../images/bimai.png"></image>
+            <text>餐桌</text>
+        <view class="img-box2">
+            
+                <view class="img-list1">
+                    <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=554777578,3770146206&fm=27&gp=0.jpg" mode="aspectFill"></image>
+                    <view class="textarea">欧式风格床SL3051</view>
+                    <view class="price">￥600</view>
+                    <view class="num">月售99件</view>
+                </view>
+                <view class="img-list2">
+                    <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2081167470,2148315695&fm=27&gp=0.jpg" mode="aspectFill"></image>
+                    <view class="textarea">欧式风格床SL2006</view>
+                    <view class="price">￥800</view>
+                    <view class="num">月售39件</view>
+                </view>
+                
+        </view>
+        </view>
 
 </view>

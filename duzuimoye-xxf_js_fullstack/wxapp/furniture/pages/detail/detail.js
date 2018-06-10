@@ -37,7 +37,11 @@ Page({
     wx.showToast({
       title: '已成功加入购物车',
       icon: 'success',
-      duration: 3000
+      duration: 5000
+    })
+    
+    wx.switchTab({
+      url: '/pages/shoppingcar/shoppingcar'
     })
   },
   buyNow:function(){
@@ -48,6 +52,9 @@ Page({
     setTimeout(function(){
       wx.hideLoading()
     },2000)
+    wx.navigateTo({
+      url:'/pages/buy/buy'
+    })
   },
 
   /**

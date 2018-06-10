@@ -1,39 +1,13 @@
-// pages/recommend/recommend.js
+// pages/dingdan/dingdan.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    slides:[
-      {
-        id:1,
-        image:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=23885218,3140348325&fm=27&gp=0.jpg"
-      },
-      {
-        id:2,
-        image:"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=49584771,771734647&fm=27&gp=0.jpg"
-      },
-      {
-      id:3,
-      image:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1662631054,533986851&fm=27&gp=0.jpg"
-      }
-    ]
+  
   },
-  detail:function(){
-    wx.navigateTo({
-      url:'../detail/detail'
-    })
-  },
-  buy:function(){
-    wx.showLoading({
-      title: '购买中',
-    })
-    
-    setTimeout(function(){
-      wx.hideLoading()
-    },2000)
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

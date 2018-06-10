@@ -1,0 +1,14 @@
+<!--pages/dingdan/dingdan.wxml-->
+<view class="container">
+    <view class="item">
+        <text>JD 双龙沙发家具＞</text>
+    </view>
+    <view class="info">
+        <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=49584771,771734647&fm=27&gp=0.jpg"/>
+        <text> 双龙家具 北欧大户型客厅整装组合可拆洗转角三人沙发 </text>
+    </view>
+    <view class="price">
+        <text>实付款:￥2800</text>
+    </view>
+    <view id="add">再次购买</view>
+</view>

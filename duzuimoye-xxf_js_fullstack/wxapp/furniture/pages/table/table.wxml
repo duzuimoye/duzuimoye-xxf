@@ -1,62 +1,68 @@
-<!--pages/table/table.wxml-->
-<!--pages/desk/desk.wxml-->
-<!--pages/sofa/sofa.wxml-->
 
 <view class="img-box2">
         
-        <view class="img-list1">
-            <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=195965264,3705637317&fm=27&gp=0.jpg" mode="aspectFill"></image>
-            <text class="textarea">欧式时尚风格餐桌SL3051</text>
-            <text class="textarea2">￥2800RMB</text>
+                <view class="img-list1">
+                    <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4176771103,442488031&fm=27&gp=0.jpg" mode="aspectFill"></image>
+                    <view class="textarea">欧式时尚风格床SL3051</view>
+                    <view class="price">￥800RMB</view>
+                    <view class="num">月售88件</view>
+                </view>
+                <view class="img-list2">
+                        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528391717554&di=46fc70ee58b02cc40f2bee9133d7f11b&imgtype=0&src=http%3A%2F%2Fimg1n.soufunimg.com%2Fviewimage%2Fjiancai%2Fbusiness%2Fxgt%2F201409%2F01%2F540%2F9ba7a27b39d38e1793cfb75340ef7c41%2F478x478c.jpg" mode="aspectFill"></image>
+                        <view class="textarea">欧式时尚风格床SL2006</view>
+                        <view class="price">￥900RMB</view>
+                        <view class="num">月售68件</view>
+                        
+                </view>
         </view>
-        <view class="img-list2">
-                <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1711922207,1137376233&fm=200&gp=0.jpg" mode="aspectFill"></image>
-                <text class="textarea">欧式时尚风格餐桌SL2006</text>
-                <text class="textarea2">￥2900RMB</text>
+        <view class="img-box3">
                 
-        </view>
-</view>
-<view class="img-box3">
+                <view class="img-list1">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528391717553&di=eb8994bccf5d384963c211e74cccc958&imgtype=0&src=http%3A%2F%2Fpic33.photophoto.cn%2F20141223%2F0037037378741728_b.jpg" mode="aspectFill"></image>
+                    <view class="textarea">欧式时尚风格床SL3051</view>
+                    <view class="price">￥800RMB</view>
+                    <view class="num">月售98件</view>
+                </view>
+                <view class="img-list2">
+                        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528391717553&di=db158e39f3d8fe72af44cbfd8848d62d&imgtype=0&src=http%3A%2F%2Fpic3.16pic.com%2F00%2F09%2F29%2F16pic_929162_b.jpg" mode="aspectFill"></image>
+                        <view class="textarea">欧式时尚风格床SL2006</view>
+                        <view class="price">￥900RMB</view>
+                        <view class="num">月售168件</view>
+                </view>
+             
+        </view> 
+        <view class="img-box3">
+                
+                        <view class="img-list1">
+                            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4176771103,442488031&fm=27&gp=0.jpg" mode="aspectFill"></image>
+                            <view class="textarea">欧式时尚风格床SL3051</view>
+                            <view class="price">￥800RMB</view>
+                            <view class="num">月售168件</view>
+                        </view>
+                        <view class="img-list2">
+                                <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4176771103,442488031&fm=27&gp=0.jpg" mode="aspectFill"></image>
+                                <view class="textarea">欧式时尚风格床SL2006</view>
+                                <view class="price">￥900RMB</view>
+                                <view class="num">月售168件</view>
+                        </view>
+                     
+        </view> 
+        <view class="img-box3">
+                
+                        <view class="img-list1">
+                            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4176771103,442488031&fm=27&gp=0.jpg" mode="aspectFill"></image>
+                            <view class="textarea">欧式时尚风格床SL3051</view>
+                            <view class="price">￥800RMB</view>
+                            <view class="num">月售168件</view>
+                        </view>
+                        <view class="img-list2">
+                                <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4176771103,442488031&fm=27&gp=0.jpg" mode="aspectFill"></image>
+                                <view class="textarea">欧式时尚风格床SL2006</view>
+                                <view class="price">￥900RMB</view>
+                                <view class="num">月售168件</view>
+                        </view>
+                      
+        </view> 
         
-        <view class="img-list1">
-            <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2509029088,1464171251&fm=200&gp=0.jpg" mode="aspectFill"></image>
-            <text class="textarea">欧式时尚风格餐桌SL3051</text>
-            <text class="textarea2">￥2800RMB</text>
-        </view>
-        <view class="img-list2">
-                <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1844954195,1449756631&fm=200&gp=0.jpg" mode="aspectFill"></image>
-                <text class="textarea">欧式时尚风格餐桌SL2006</text>
-                <text class="textarea2">￥2900RMB</text>
-                
-        </view>
-</view>
-<view class="img-box3">
         
-        <view class="img-list1">
-            <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2581529535,2261506771&fm=200&gp=0.jpg" mode="aspectFill"></image>
-            <text class="textarea">欧式时尚风格餐桌SL3051</text>
-            <text class="textarea2">￥5800RMB</text>
-        </view>
-        <view class="img-list2">
-                <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1667793753,858138772&fm=27&gp=0.jpg" mode="aspectFill"></image>
-                <text class="textarea">欧式时尚风格餐桌SL2006</text>
-                <text class="textarea2">￥3900RMB</text>
-                
-        </view>
-</view>
-<view class="img-box3">
         
-        <view class="img-list1">
-            <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3068932951,2903339436&fm=200&gp=0.jpg" mode="aspectFill"></image>
-            <text class="textarea">欧式时尚风格餐桌SL3051</text>
-            <text class="textarea2">￥4800RMB</text>
-        </view>
-        <view class="img-list2">
-                <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2997062862,938357432&fm=200&gp=0.jpg" mode="aspectFill"></image>
-                <text class="textarea">欧式时尚风格餐桌SL2006</text>
-                <text class="textarea2">￥1900RMB</text>
-                
-        </view>
-</view>
-
-
