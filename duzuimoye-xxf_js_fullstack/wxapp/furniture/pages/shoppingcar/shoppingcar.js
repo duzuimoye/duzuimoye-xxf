@@ -11,7 +11,11 @@ Page({
     selectAllStatus:true,
 
   },
-
+  buy:function(){
+    wx.navigateTo({
+      url:'/pages/buy/buy'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

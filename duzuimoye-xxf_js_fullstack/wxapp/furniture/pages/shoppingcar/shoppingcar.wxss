@@ -93,6 +93,9 @@
     background: #AB956D;
     color: #fff;
   }
+  .buy{
+      float: right;
+  }
   .total-select{
     position: absolute;
     left: 20rpx;

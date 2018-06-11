@@ -26,6 +26,7 @@
                 <icon wx:else type="circle" class="total-seclect" color="#fff"
                 bindtap="selectAll"/>
                 <text>全选</text>
+                <view class="buy" bindtap="buy">立即购买</view>
                 <text class="cart-total-price">￥{{totalPrice}}</text>
             </view>
         </view>

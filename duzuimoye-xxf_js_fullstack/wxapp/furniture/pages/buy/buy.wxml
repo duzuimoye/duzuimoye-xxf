@@ -7,6 +7,6 @@
         <view class="paySuccessText">支付成功</view>
     </view>
     <view class="successPriceText">双龙时尚家居</view>
-    <view class="successPrice">￥2800</view>
+    <view class="successPrice">￥8900</view>
     <view class="successBtn" bindtap="finish">完成</view>
 </view>
