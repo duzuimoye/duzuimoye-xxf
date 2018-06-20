@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box active huge_box"></div>
+    <script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.min.js"></script>
+    <script>
+        function hasClass(ele,cls){
+            const reg = new RegExp('(^|\\s)'+cls+'(\\s|$)');
+            return reg.test(ele.className);
+        }
+        function removeClass(ele,cls){
+            if(hasClass(ele,cls)){
+                const reg = new RegExp('(^|\\s)'+cls+'(\\s|$)');
+                return ele.className.replace(reg,'').trim()
+            }
+        }
+        // 类字符串 用空格隔开，单纯的indexof判断，子字符串的可能
+        // 最开始第一个 最后面 中间的类名，左右至少有一个空格
+        // 1 开始和结束，有这个词就好了，
+        // 词＋空格 开始 ^\s*
+        // 结束 空格\s+词$
+        // 2 中间情况
+        // \s+词\s+
+        // 解决方案：正则表达式
+        // const reg = new RegExp('(^|\\s)'+cls+'(\\s|$)');
+        // console.log($('.box').hasClass('active'));
+        // const box = document.querySelector('.box');
+        // console.log(box.classList)
+    </script>
+</body>
+</html>
