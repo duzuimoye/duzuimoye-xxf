@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <div class="user-box">
+      <p class="username"></p>
+      <p class="desc"></p>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/1.8.0/jquery-1.8.0.min.js"></script>
+  <script>
+    //   第一种
+    //   fetch('/user.json')
+    //   .then(data => data.json())
+    //   .then(data => {
+    //       console.log(data);
+    //   })
+    // 第二种（手写一个ajax)
+//     var request=new XMLHttpRequest()
+//     request.open("get","user.json",true);//hot.json是本地存在的JSON文档
+//   request.send();
+//   request.onreadystatechange=function(){
+// if(request.readyState==4 && request.status==200){
+//   //代表请求成功并返回了数据
+//   //字符串格式的数据（JSON）
+//   //responseXML XML格式的数据
+//       console.log(request.responseText);
+//       var obj=JSON.parse(request.responseText);
+//       console.log(obj);
+// }}
+// 第三种
+// $(function(){
+//     $.getJSON("/user.json",function(data){
+//         console.log(data)
+//         $('.uesrname').html(data.name);
+//         $('.desc').html(data.desc);
+
+//     })
+// })
+// 第四种(和第二种一样)
+// xhr  hr X
+// js 主动请求数据的过程
+// ajax 是js 具有web2.0 运态请求页面的能力
+let xhr = null;
+// js 主动发出一次http 请求request 支持的数据交换格式xml
+if(window.XMLHttpRequest){
+xhr=new XMLHttpRequest();
+}else {
+    xhr=new ActiveXObject("Microsoft.XMLHTTP");
+
+}
+// false|| true 异步请求
+xhr.open('get','/user.json',true);
+//发送
+xhr.send();
+// 一旦发送之后 状态就会发送改变
+xhr.onreadystatechange=function(){
+    // console.log(xhr.readyState);
+    // 200 http 状态码 成功响应
+    if(xhr.readyState==4 && xhr.status==200){
+        console.log(xhr.responseText);
+        var obj=JSON.parse(xhr.responseText);
+        console.log(obj);
+    }
+}
+
+
+  </script>
+</body>
+</html>
