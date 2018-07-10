@@ -7,7 +7,9 @@ Vue.use(Vuex)
 
 const state = {
     totalTime: 0,
-    list: []
+    list: [
+        
+    ]
 }
 export default new Vuex.Store({
     state,

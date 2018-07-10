@@ -1,7 +1,12 @@
 <template>
   <div>
-    TimeEntries
+    <router-link v-if="$route.path !== '/time-entries/log-time'"
+    to="/time-entries/log-time" class="btn btn-primary">创建</router-link>
     <router-view />
+    <div v-if="$route.path !== '/time-entries/log-time'">
+      <h3>创建</h3>
+    </div>
+    <hr>
     <div class="time-entries">
       <p v-if="!plans.length">
         <strong>还没有任何计划</strong>
@@ -52,7 +57,8 @@ export default {
     },
     methods: {
         deletePlan (idx) {
-
+          this.$store.dispatch('decTotalTime',this.plans[idx].totalTime)
+          this.$store.dispatch('deletePlan',idx)
         }
     }
 }
@@ -60,6 +66,7 @@ export default {
 <style>
 .avatar {
     height: 75px;
+    width: 75px;
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
