@@ -1,6 +1,7 @@
 <template>
     <header id="head_top">
         <slot name='logo'/>
+        <slot name="search"/>
         <section v-if="goBack" @click="$router.go(-1)" class="head_back">
             <svg width="100%" height="100%" xmlns ="http://www.w3.org/2000/svg" version="1.1">
                 <polyline points="12,18,4,9,12,0" 
@@ -16,6 +17,7 @@
         </section>
         <section >
             <slot name="changecity"></slot>
+            <slot name="msite-title"></slot>
         </section>
     </header>
 </template>

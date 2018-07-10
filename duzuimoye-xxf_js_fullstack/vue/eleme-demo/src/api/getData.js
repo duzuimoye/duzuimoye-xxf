@@ -47,3 +47,14 @@ export const getcaptchas =() =>new Promise((resolve,reject) =>{
 .then (data => resolve(data))
 .catch (err => reject(err))
 })
+
+export const msiteFoodTypes = (geohash)=>{
+    return new Promise((resolve,reject)=>{
+        http.get('/v2/index_entry',{
+            geohash,
+            group_type:'1',
+            'flags[]':'F'
+        }).then(res => resolve(res.data))
+      
+    })
+}

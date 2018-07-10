@@ -33,7 +33,7 @@ export default new Router({
     },
     {
       path:'/msite',   
-      component:city
+      component:msite
       
     }
   ]
