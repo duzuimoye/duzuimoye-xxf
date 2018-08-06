@@ -1,6 +1,6 @@
 <template>
   <div class="data-picker">日历
-    <input type="text" class="data" v-model="dataValue" @click="openPanel"/>
+    <input type="text" class="data" v-model="dateValue" @click="openPanel"/>
     <transition name="fadeDownBig">
       <div class="data-panel" v-show="panelState">
         <div class="topbar">
@@ -32,8 +32,8 @@
           <span v-for="(item ,index) in weekList" :key="index" class="weekday">{item.label}</span>
             <ul class="date-list">
               <li v-for="(item, index) in dateList" :key="index" v-text="item.value"
-              :class="{preMonth:item.preciousMonnth,nextMonth:item.nextMonth,
-              selected: date===item.value && month === month && item.currentMonth, invalid:validateDate(item)}"
+              :class="{preMonth:item.previousMonth,nextMonth:item.nextMonth,
+              selected: date ===item.value && month === month && item.currentMonth, invalid:validateDate(item)}"
                @click="selectDate(item)">
               </li>
             </ul>
@@ -46,7 +46,8 @@
 export default {
 data(){
   return{
-    dataValue:"",
+    dateValue:"", //输入框显示时期
+    date:new Date() .getDate(), //当前日期
     panelState: true,
     month:new Date().getMonth(),
     year:new Date().getFullYear(),
@@ -107,7 +108,21 @@ computed: {
     // 获取当月1号的星期是为了确定在1号前插入多少天
     let startDay = new Date(this.year, this.month, 1).getDay();
     // 确认上个月多少天
-    
+    let previousMonthLength = new Date(
+      this.year,
+      this.month,
+      0
+    ).getDate();
+    // 在一号前插入上个月的日期
+    for(let i=0; i<startDay;i++){
+      dateList = [
+        { previousMonth: true, value: previousMonthLength - i }].concat(dateList);
+    }
+    // 补全剩余的位置
+    for(let i=1, item=1;i<15;i++, item++){
+      dateList[dateList.length] = {nextMonth: true,value: i};
+    }
+    return dateList;
   }
 },
 methods:{
@@ -136,7 +151,14 @@ methods:{
     this.panelType = "date"
   },
   selectDate(item){
-
+    this.nowValue = item.value;
+    if(item.previousMonth) month--;
+    if(item.nextMonth) month++;
+    let selectDay = new Date(this.year,this.month,this.nowValue);
+    console.log(selectDay.getTime());
+  },
+  validateDate(item){
+    if(this.nowValue === item.value && item.currentMonth) return true;
   }
 }
 }
