@@ -1,8 +1,8 @@
 <template>
-  <div class="data-picker">日历
+  <div class="date-picker">日历
     <input type="text" class="data" v-model="dateValue" @click="openPanel"/>
     <transition name="fadeDownBig">
-      <div class="data-panel" v-show="panelState">
+      <div class="date-panel" v-show="panelState">
         <div class="topbar">
           <span @click="leftBig">&lt;&lt;</span>
           <span @click="left">&lt;</span>
@@ -123,6 +123,9 @@ computed: {
       dateList[dateList.length] = {nextMonth: true,value: i};
     }
     return dateList;
+  },
+  changeMonth() {
+    return this.monthList[this.year].label;
   }
 },
 methods:{
@@ -131,16 +134,30 @@ methods:{
     this.panelType = "date"; 
   },
   leftBig() {
-
+    if(this.panelType === "year") this.year-=12;
+    else this.year--;
   },
   left() {
-
+    if(this.panelType === "year") this.year--;
+    else {
+      if(this.month ===0) {
+        this.year--;
+        this.month = 11;
+      }else this.month--;
+    }
   },
   right() {
-
+    if(this.panelType === "year") this.year++;
+    else {
+      if(this.month ===11) {
+        this.year++;
+        this.month = 0;
+      }else this.month++;
+    }
   },
   rightBig() {
-
+    if(this.panelType === "year") this.year+=12;
+    else this.year++;
   },
   selectYear(item) {
     this.year = item;
@@ -165,6 +182,40 @@ methods:{
 </script>
 
 <style scoped>
+  .date-picker {
+    width: 210px;
+    text-align: center;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+  }
+  input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 32px;
+    line-height: 1.5;
+    padding: 4px 7px;
+    font-size: 12px;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+    color: #515a6e;
+    background-color: #fff;
+    background-image: none;
+    position: relative;
+    cursor: text;
+    transition: border 0.2s ease-in-out, background 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+    margin-bottom: 6px;
+}
+  .date-panel {
+    width: 210px;
+    box-shadow: 0 0 8px #ccc;
+    background: #fff;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
   .topbar{
     padding-top: 10px;
   }
@@ -182,4 +233,68 @@ methods:{
   .topbar .year, .topbar .month{
     width: 60px;
   }
+  .year-list{
+    width: 210px;
+    height: 200px;
+  }
+  .year-list .selected {
+    background: #2d8cf0;
+    border-radius: 4px;
+    color:#fff;
+  }
+  .year-list li{
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .year-list span{
+    display: inline-block;
+    line-height: 16px;
+    padding: 8px;
+  }
+  .year-list span hover{
+    background:#e2f0fe;
+  }
+  .weekday {
+  display: inline-block;
+    font-size: 13px;
+    width: 30px;
+    color: #c5c8ce;
+    text-align: center;
+  }
+  .date-list {
+    width: 210px;
+    text-align: left;
+    height: 180px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+  .date-list li {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+  .date-list .selected {
+    border: 1px solid #2d8cf0;
+}
+  .date-list .invalid {
+    background: #2d8cf0;
+    color: #fff;
+}
+  .date-list .preMonth,
+  .date-list .nextMonth {
+    color: #c5c8ce;
+}
+  .date-list li:hover {
+    background: #e1f0fe;
+}
 </style>
