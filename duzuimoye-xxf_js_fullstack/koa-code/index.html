@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 自定义事件除了（click mousedown touchstart）
+  js是一门事件驱动打的语言 -->
+<script>
+  function Emitter() {
+    this.events = {};
+  }
+  Emitter.prototype.on = function(type, cb) {
+    var events = this.events;
+    events = events[type] = events[type] || [];
+    events.push(cb);
+    return this;
+  }
+  Emitter.prototype.emit = function(type) {
+    var args = [].slice.call(arguments, 1);
+    var cbs = this.events[type];
+    while (cb = cbs && cbs.shift()) {   //shift删除数组中的第一个元素  unshift添加数组中的第一个元素
+      cb.apply(this, args);
+    }
+  }
+  var emitter = new Emitter();
+  emitter.on('customEvent', function(param){
+    alert(param);
+  }).on('customEvent', function() {
+    alert(1);
+  }).on('customEvent', function() {
+    alert(2);
+  })
+  console.log(emitter.events);
+  
+  emitter.emit('customEvent','xxxx');
+</script>
+</body>
+</html>
